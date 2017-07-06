@@ -1,0 +1,235 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .dropmenu > li:nth-of-type(2){
+        border-bottom: solid 1px #999;
+    }
+
+    .concept .text{
+        width: 100%;
+        margin: 0 auto;
+        padding: 150px 0;
+        text-align: center;
+        color: #fff;
+        background-color: #aaaaaa;
+    }
+    .concept .text h1{
+        font-size: 20px;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .concept .text h1:before{
+        content: url("../images/concept_logo.gif");
+        position: relative;
+        top: 4px;
+        margin-right: 10px;
+    }
+    .concept .text h1:after{
+        content: url("../images/concept_logo.gif");
+        position: relative;
+        top: 4px;
+        margin-left: 10px;
+    }
+    .concept .text h2{
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    .concept .text_z{
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .concept table{
+        width: 700px;
+        margin: 150px auto;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .concept table td{
+        height: 80px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .concept table tr:nth-of-type(1){
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .concept table td:nth-of-type(1){
+        width: 120px;
+        text-align: center;
+    }
+    .concept table td:nth-of-type(2){
+        padding-left: 3em;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .concept .text{
+        width: 100%;
+        font-size: 13.5px;
+        padding: 50px 1em 50px 1em;
+        text-align: center;
+        color: #fff;
+        background-color: #aaaaaa;
+    }
+    .concept .text h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .concept .text h1:before{
+        content: url("../images/concept_logo.gif");
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+    }
+    .concept .text h1:after{
+        content: url("../images/concept_logo.gif");
+        position: relative;
+        top: 4px;
+        margin-left: 5px;
+    }
+    .concept .text h2{
+        font-weight: 200;
+    }
+    .concept .text_z{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #company table{
+        margin: 80px auto;
+        width: 90%;
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-weight: 200;
+    }
+    #company table tr:nth-of-type(1){
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #company table td:nth-of-type(1){
+        width: 25%;
+         padding: 15px 1em;
+         text-align: center;
+    }
+    #company table td:nth-of-type(2){
+        width: 75%;
+        padding: 0 1em;
+    }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .concept .text{
+        width: 100%;
+        font-size: 13.5px;
+        padding: 50px 1em 50px 1em;
+        text-align: center;
+        color: #fff;
+        background-color: #aaaaaa;
+    }
+    .concept .text h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .concept .text h1:before{
+        content: url("../images/concept_logo.gif");
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+    }
+    .concept .text h1:after{
+        content: url("../images/concept_logo.gif");
+        position: relative;
+        top: 4px;
+        margin-left: 5px;
+    }
+    .concept .text h2{
+        font-weight: 200;
+    }
+    .concept .text_z{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #company table{
+        margin: 80px auto;
+        width: 100%;
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-weight: 200;
+    }
+    #company table tr:nth-of-type(1){
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #company table td:nth-of-type(1){
+        width: 25%;
+         padding: 15px 1em;
+         text-align: center;
+    }
+    #company table td:nth-of-type(2){
+        width: 75%;
+        padding: 0 1em;
+    }
+}
+/*------------ここまでスマホ画面用の設定------------*/

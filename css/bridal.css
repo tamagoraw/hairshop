@@ -1,0 +1,325 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        /*position: relative;*/
+        /*height: 100%;*/
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .dropmenu > li:nth-of-type(6){
+        border-bottom: solid 1px #999;
+    }
+
+    .bridal{
+        padding: 50px 0;
+    }
+
+    .bridal .text1{
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 1px 1px 4px #000;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .bridal .text2{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 15.5px;
+        font-weight: 200;
+        margin: 100px 0 50px 0;
+        padding: 30px 0;
+    }
+    .bridal .text2 li{
+        width: 960px;
+        margin: 0 auto;
+        /*padding-left: 50px;*/
+    }
+    .bridal .text2 li:nth-of-type(1){
+        text-align: center;
+        padding-bottom: 50px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .bridal .text2 li:nth-of-type(n+2){
+        line-height: 30px;
+    }
+    .bridal .text3{
+        font-size: 21px;
+        color: #fff;
+        text-shadow: 1px 1px 4px #000;
+        text-align: center;
+        margin-bottom: 100px;
+        font-weight: 400;
+    }
+
+    .bridal .colorbox_ul{
+        width: 840px;
+        margin: 0 auto;
+    }
+    .bridal .colorbox_ul li{
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+    .bridal .colorbox_ul li a img{
+        opacity: 1;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    .bridal .colorbox_ul li a:hover img{
+        opacity: 0.7;
+    }
+    .bridal .colorbox_ul li:nth-of-type(5n){
+        margin-right: 0;
+    }
+
+    .position{
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .staff{
+        position: relative;
+        position: absolute;
+        top: -518px;
+        right: 0;
+        /*width: 150px;
+        height: 150px;*/
+        /*border-radius: 15px;*/
+        /*overflow: hidden;*/
+        margin: 100px auto 100px auto;
+    }
+    .staff img{
+        width: 130px;
+        height: 130px;
+    }
+    .staff .name{
+        position: absolute;
+        width: 130px;
+        height: 50px;
+        padding-top: 5px;
+        /*border-radius: 15px;*/
+        /*padding-top: 60px;*/
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        color: #000;
+        font-size: 14.5px;
+        bottom: -50px;
+    }
+    .staff .name:first-line{
+        font-size: 12px;
+    }
+    .staff .name:hover{
+        opacity: 1;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .bridal{
+        width: 100%;
+    }
+
+    .bridal .text1{
+        font-size: 18px;
+        padding: 50px 1em;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .bridal .text2{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 1em;
+        font-size: 14.5px;
+        font-weight: 200;
+        color: #fff;
+    }
+    .bridal .text2 li:nth-of-type(1){
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .bridal .text2 li{
+        padding: 4px 0;
+    }
+    .bridal .text3{
+        font-size: 16.5px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        padding: 40px 1em 0 1em;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .bridal .colorbox_ul{
+        width: 90%;
+        margin: 100px auto 150px auto;
+    }
+    .bridal .colorbox_ul li{
+        width: 25%;
+        float: left;
+        padding: 5px;
+    }
+    .bridal .colorbox_ul li img{
+        width: 100%;
+    }
+
+    .bridal .staff{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .bridal .staff img{
+        width: 20%;
+        margin: 0 auto;
+    }
+    .bridal .staff .name{
+        width: 20%;
+        display: block;
+        text-align: center;
+        font-size: 14.5px;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .bridal .staff .name:first-line{
+        font-size: 14px;
+    }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .bridal{
+        width: 100%;
+    }
+
+    .bridal .text1{
+        font-size: 18px;
+        padding: 50px 1em;
+        color: #fff;
+        font-weight: 400;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .bridal .text2{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 1em;
+        font-size: 14.5px;
+        font-weight: 200;
+        color: #fff;
+    }
+    .bridal .text2 li:nth-of-type(1){
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .bridal .text2 li{
+        padding: 4px 0;
+    }
+    .bridal .text3{
+        font-size: 16.5px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        padding: 40px 1em 0 1em;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .bridal .colorbox_ul{
+        width: 80%;
+        margin: 100px auto 150px auto;
+    }
+    .bridal .colorbox_ul li{
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .bridal .colorbox_ul li img{
+        width: 100%;
+    }
+
+    .bridal .staff{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .bridal .staff img{
+        width: 35%;
+        margin: 0 auto;
+    }
+    .bridal .staff .name{
+        width: 35%;
+        display: block;
+        text-align: center;
+        font-size: 14.5px;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .bridal .staff .name:first-line{
+        font-size: 14px;
+    }
+}
+/*------------ここまでスマホ画面用の設定------------*/

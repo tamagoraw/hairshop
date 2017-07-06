@@ -1,0 +1,380 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .recruit{
+        padding-top: 250px;
+    }
+
+    .recruit .text1{
+        width: 380px;
+        height: 80px;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+        font-size: 25px;
+        padding-top: 18px;
+        margin-bottom: 250px;
+        border-top: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .recruit .text2{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 20px;
+    }
+
+    .recruit .text_c{
+        display: block;
+        width: 960px;
+        margin: 0 auto;
+        padding: 10px 0 20px 0;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    .recruit .text_c:first-line{
+        display: block;
+        line-height: 50px;
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 18px;
+        /*line-height: 3em;*/
+    }
+
+    #carrier{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-top: 100px;
+    }
+    .carrier{
+        width: 960px;
+        margin: 0 auto;
+    }
+    .carrier .text3{
+        text-align: center;
+        font-size: 25px;
+        padding: 50px 0;
+        font-weight: 400;
+    }
+    .carrier .text_cc{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        padding-top: 38px;
+        text-align: center;
+        background-color: #999;
+    }
+    .carrier .text4{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 200;
+        text-decoration: underline;
+        padding: 20px 0;
+    }
+    .carrier .text4:first-line{
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .carrier .text5{
+        font-size: 16px;
+        font-weight: 200;
+        padding-bottom: 70px;
+    }
+
+    .recruit table{
+        width: 700px;
+        height: 480px;
+        margin: 90px auto 100px auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .recruit table tr:nth-of-type(1){
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .recruit table td{
+        height: 80px;
+        /*border: solid 2px #fff;*/
+    }
+    .recruit table td:nth-of-type(1){
+        width: 150px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .recruit table td:nth-of-type(2){
+        vertical-align: middle;
+        padding-left: 20px;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .recruit{
+        padding: 100px 0 50px 0;
+    }
+
+    .recruit .text1{
+        margin: 0 auto 100px auto;
+        width: 60%;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        line-height: 50px;
+        border-top: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+    }
+
+    .recruit .text2{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding: 1em;
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .recruit .text2 .bold{
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 16px;
+        display: block;
+        margin-bottom: -15px;
+    }
+
+    .carrier{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+    .carrier .text3{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+    .carrier .text_cc{
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #999;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 40px;
+        margin: 40px auto 20px auto;
+    }
+    .carrier .text4{
+        text-align: center;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: 200;
+        margin-bottom: 10px;
+        padding: 0 1em;
+    }
+    .carrier .text4:first-line{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .carrier .text5{
+        padding: 0 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .recruit table{
+        margin: 100px auto 50px auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: 14px;
+        width: 90%;
+        border-collapse: separate;
+        font-weight: 200;
+     }
+     .recruit table tr:nth-of-type(1){
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 80px;
+     }
+     .recruit table td:nth-of-type(1){
+         width: 25%;
+         text-align: center;
+         vertical-align: middle;
+     }
+     .recruit table td:nth-of-type(2){
+         font-size: 13px;
+         /*padding: 0 1em;*/
+         vertical-align: middle;
+         padding: 15px 1em;
+     }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .recruit{
+        padding: 100px 0 50px 0;
+    }
+
+    .recruit .text1{
+        margin: 0 auto 100px 0;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        line-height: 50px;
+        border-top: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+    }
+
+    .recruit .text2{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding: 1em;
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .recruit .text2 .bold{
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 16px;
+        display: block;
+        margin-bottom: -15px;
+    }
+
+    .carrier{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+    .carrier .text3{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+    .carrier .text_cc{
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #999;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 40px;
+        margin: 40px auto 20px auto;
+    }
+    .carrier .text4{
+        text-align: center;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: 200;
+        margin-bottom: 10px;
+        padding: 0 1em;
+    }
+    .carrier .text4:first-line{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .carrier .text5{
+        padding: 0 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .recruit table{
+        margin: 100px 0 50px 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: 14px;
+        width: 100%;
+        border-collapse: separate;
+        font-weight: 200;
+     }
+     .recruit table tr:nth-of-type(1){
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 80px;
+     }
+     .recruit table td:nth-of-type(1){
+         width: 25%;
+         text-align: center;
+         vertical-align: middle;
+     }
+     .recruit table td:nth-of-type(2){
+         font-size: 13px;
+         /*padding: 0 1em;*/
+         vertical-align: middle;
+         padding: 15px 1em;
+     }
+}
+/*------------ここまでスマホ画面用の設定------------*/

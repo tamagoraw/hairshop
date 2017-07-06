@@ -1,0 +1,545 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .news{
+        width: 960px;
+        margin: 0 auto;
+        padding: 50px 30px;
+    }
+
+    .news > p{
+        color: #8C6239;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news .menu{
+        width: 900px;
+        margin: 20px auto 100px auto;
+    }
+    .news .menu li{
+        float: left;
+        width: 180px;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .news .menu li a{
+        display: block;
+        opacity: 1;
+        line-height: 30px;
+        font-size: 14px;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    .news .menu li:hover a{
+        opacity: 0.7;
+    }
+    .news .menu li:nth-child(1) a{
+        background-color: #000;
+        color: #fff;
+    }
+    .news .menu li:nth-child(2) a{
+        background-color: #EE3E3E;
+        color: #fff;
+    }
+    .news .menu li:nth-child(3) a{
+        background-color: #7726A9;
+        color: #fff;
+    }
+    .news .menu li:nth-child(4) a{
+        background-color: #79c06e;
+        color: #fff;
+    }
+    .news .menu li:nth-child(5) a{
+        background-color: #DAB3F2;
+        color: #fff;
+    }
+
+    .news .info{
+        width: 700px;
+        margin: 0 auto 20px auto;
+    }
+    .news .info li{
+        float: left;
+        height: 100px;
+        border-bottom: solid 1px #cfcfcf;
+    }
+    .news .info li:nth-of-type(1){
+        width: 100px;
+        font-weight: 200;
+        font-size: 15px;
+        color: #606060;
+    }
+    .news .info li:nth-of-type(2){
+        width: 100px;
+    }
+    .news .info li:nth-of-type(2) img{
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    .news .info li:nth-of-type(2):hover img{
+        opacity: 0.7;
+    }
+    .news .info li:nth-of-type(3){
+        width: 500px;
+        font-size: 14.5px;
+        padding-left: 3em;
+        padding-top: 38px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .news .info li:nth-of-type(3):hover a{
+        text-decoration: underline;
+    }
+
+    /*.news table{
+        width: 900px;
+        margin: 0 auto;
+        font-weight: 200;
+    }
+    .news table tr{
+        border-bottom: solid 1px #cfcfcf;
+    }
+    .news table td{
+        padding: 30px 0 10px 0;
+    }
+    .news table td:nth-of-type(1){
+        font-size: 16px;
+        color: #606060;
+        width: 150px;
+    }
+    .news table td:nth-of-type(2){
+        width: 150px;
+    }
+    .news table td:nth-of-type(2) img{
+        width: 80px;
+        height: 80px;
+    }
+    .news table td:nth-of-type(3){
+        width: 600px;
+        font-size: 15.2px;
+    }
+    .news table a:hover{
+        text-decoration: underline;
+    }*/
+
+    /*日付け下の店舗マークの設定*/
+    .text_y{
+        display: block;
+        background-color: #EE3E3E;
+        color: #fff;
+        text-align: center;
+        width: 70px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+    }
+    .text_k{
+        display: block;
+        background-color: #7726A9;
+        color: #fff;
+        text-align: center;
+        width: 70px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+    }
+    .text_n{
+        display: block;
+        background-color: #DAB3F2;
+        color: #fff;
+        text-align: center;
+        width: 70px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+    }
+    .text_a{
+        display: block;
+        background-color: #79c06e;
+        color: #fff;
+        text-align: center;
+        width: 70px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .news{
+        padding: 50px 0;
+    }
+
+    .news p{
+        text-align: center;
+        color: #8C6239;
+        font-size: 18px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news .menu{
+        width: 90%;
+        margin: 20px auto 100px auto;
+    }
+    .news .menu li{
+        float: left;
+        width: 20%;
+        line-height: 33px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .news .menu a{
+        display: block;
+    }
+    .news .menu li:nth-child(1) a{
+        background-color: #000;
+        color: #fff;
+    }
+    .news .menu li:nth-child(2) a{
+        background-color: #EE3E3E;
+        color: #fff;
+    }
+    .news .menu li:nth-child(3) a{
+        background-color: #7726A9;
+        color: #fff;
+    }
+    .news .menu li:nth-child(4) a{
+        background-color: #DAB3F2;
+        color: #fff;
+    }
+    .news .menu li:nth-child(5) a{
+        background-color: #79c06e;
+        color: #fff;
+    }
+
+    .news .info{
+        width: 90%;
+        margin: 0 auto 15px auto;
+        border-bottom: solid 1px #cfcfcf;
+    }
+    .news .info li{
+        float: left;
+        height: 70px;
+        font-weight: 200;
+    }
+    .news .info li:nth-of-type(1){
+        width:15%;
+        font-size: 12px;
+        text-align: center;
+        color: #606060;
+        padding-top: 15px;
+    }
+    .news .info li:nth-of-type(2){
+        width: 25%;
+    }
+    .news .info li:nth-of-type(2) img{
+        height: 70px;
+        margin: 0 auto;
+    }
+    .news .info li:nth-of-type(3){
+        width: 60%;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: underline;
+        padding-top: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /*table{
+        width: 90%;
+        margin: 0 auto;
+        font-weight: 200;
+    }
+    table tr{
+        width: 100%;
+        height: 80px;
+        display: block;
+        border-bottom: solid 1px #cfcfcf;
+        margin-bottom: 10px;
+        clear: both;
+    }
+    td{
+        float: left;
+        display: block;
+    }
+    table tr td:nth-of-type(1){
+        width: 15%;
+        text-align: center;
+        color: #606060;
+        font-size: 13px;
+        padding-top: 15px;
+    }
+    table td:nth-of-type(2){
+        width: 25%;
+    }
+    table td:nth-of-type(2) img{
+        max-height: 80px;
+        margin: 0 auto;
+    }
+    table td:nth-of-type(3){
+        width: 60%;
+        font-size: 14px;
+        padding-top: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }*/
+
+    .text_y{
+        display: block;
+        width: 60px;
+        background-color: #EE3E3E;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .text_k{
+        display: block;
+        width: 60px;
+        background-color: #7726A9;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .text_n{
+        display: block;
+        width: 60px;
+        background-color: #DAB3F2;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .text_a{
+        display: block;
+        width: 60px;
+        background-color: #79c06e;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .news{
+        padding: 50px 0;
+    }
+
+    .news p{
+        text-align: center;
+        color: #8C6239;
+        font-size: 18px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news .menu{
+        width: 90%;
+        margin: 20px auto 100px auto;
+    }
+    .news .menu li{
+        float: left;
+        width: 20%;
+        line-height: 33px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .news .menu a{
+        display: block;
+    }
+    .news .menu li:nth-child(1) a{
+        background-color: #000;
+        color: #fff;
+    }
+    .news .menu li:nth-child(2) a{
+        background-color: #EE3E3E;
+        color: #fff;
+    }
+    .news .menu li:nth-child(3) a{
+        background-color: #7726A9;
+        color: #fff;
+    }
+    .news .menu li:nth-child(4) a{
+        background-color: #DAB3F2;
+        color: #fff;
+    }
+    .news .menu li:nth-child(5) a{
+        background-color: #79c06e;
+        color: #fff;
+    }
+
+    .news .info{
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: solid 1px #cfcfcf;
+    }
+    .news .info li{
+        float: left;
+        height: 60px;
+        font-weight: 200;
+    }
+    .news .info li:nth-of-type(1){
+        width:25%;
+        font-size: 12px;
+        text-align: center;
+        color: #606060;
+        padding-top: 10px;
+    }
+    .news .info li:nth-of-type(2){
+        display: none;
+    }
+    .news .info li:nth-of-type(3){
+        width: 75%;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 1em;
+        text-decoration: underline;
+        padding-top: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /*table{
+        width: 90%;
+        margin: 0 auto;
+        border: solid 1px #000;
+    }
+    td:nth-of-type(1){
+        width: 50%;
+        font-size: 12px;
+        border: solid 1px #000;
+    }
+    td:nth-of-type(2){
+        display: none;
+    }
+    td:nth-of-type(3){
+        width: 50%;
+    }*/
+
+    .text_y{
+        display: block;
+        width: 60px;
+        background-color: #EE3E3E;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .text_k{
+        display: block;
+        width: 60px;
+        background-color: #7726A9;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .text_n{
+        display: block;
+        width: 60px;
+        background-color: #DAB3F2;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .text_a{
+        display: block;
+        width: 60px;
+        background-color: #79c06e;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+/*------------ここまでスマホ画面用の設定------------*/

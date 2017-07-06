@@ -1,0 +1,449 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .news{
+        width: 960px;
+        margin: 0 auto;
+        padding: 50px 30px;
+    }
+
+    .news > p{
+        color: #8C6239;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news .menu{
+        width: 900px;
+        margin: 20px auto 100px auto;
+    }
+    .news .menu li{
+        float: left;
+        width: 180px;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .news .menu li a{
+        display: block;
+        opacity: 1;
+        line-height: 30px;
+        font-size: 14px;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    .news .menu li:hover a{
+        opacity: 0.7;
+    }
+    .news .menu li:nth-child(1) a{
+        background-color: #000;
+        color: #fff;
+    }
+    .news .menu li:nth-child(2) a{
+        background-color: #EE3E3E;
+        color: #fff;
+    }
+    .news .menu li:nth-child(3) a{
+        background-color: #7726A9;
+        color: #fff;
+    }
+    .news .menu li:nth-child(4) a{
+        background-color: #DAB3F2;
+        color: #fff;
+    }
+    .news .menu li:nth-child(5) a{
+        background-color: #79c06e;
+        color: #fff;
+    }
+
+    .contents{
+        width: 700px;
+        margin: 60px auto 0 auto;
+        border-bottom: solid 1px #000;
+    }
+    .contents p:nth-of-type(1){
+        color: #606060;
+        font-weight: 200;
+    }
+    .contents p:nth-of-type(3){
+        font-size: 15.5px;
+        padding: 30px 0 10px 0;
+        text-align: center;
+        border-bottom: solid 1px #cfcfcf;
+    }
+    .contents p:nth-of-type(4){
+        display: block;
+        font-size: 14px;
+        width: 40em;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-weight: 200;
+    }
+    .contents p:nth-of-type(4) img{
+        max-width: 30em;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .text_y{
+        display: block;
+        background-color: #EE3E3E;
+        color: #fff;
+        text-align: center;
+        width: 170px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+    .text_k{
+        display: block;
+        background-color: #7726A9;
+        color: #fff;
+        text-align: center;
+        width: 170px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+    .text_n{
+        display: block;
+        background-color: #DAB3F2;
+        color: #fff;
+        text-align: center;
+        width: 195px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+    .text_a{
+        display: block;
+        background-color: #79c06e;
+        color: #fff;
+        text-align: center;
+        width: 195px;
+        line-height: 25px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .news{
+        padding: 50px 0;
+    }
+
+    .news > p{
+        text-align: center;
+        color: #8C6239;
+        font-size: 18px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news{
+        padding: 50px 0;
+    }
+
+    .news > p{
+        text-align: center;
+        color: #8C6239;
+        font-size: 18px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news .menu{
+        width: 90%;
+        margin: 20px auto 100px auto;
+    }
+    .news .menu li{
+        float: left;
+        width: 20%;
+        line-height: 33px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .news .menu a{
+        display: block;
+    }
+    .news .menu li:nth-child(1) a{
+        background-color: #000;
+        color: #fff;
+    }
+    .news .menu li:nth-child(2) a{
+        background-color: #EE3E3E;
+        color: #fff;
+    }
+    .news .menu li:nth-child(3) a{
+        background-color: #7726A9;
+        color: #fff;
+    }
+    .news .menu li:nth-child(4) a{
+        background-color: #DAB3F2;
+        color: #fff;
+    }
+    .news .menu li:nth-child(5) a{
+        background-color: #79c06e;
+        color: #fff;
+    }
+
+    .text_y{
+        display: block;
+        width: 160px;
+        background-color: #EE3E3E;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .text_k{
+        display: block;
+        width: 160px;
+        background-color: #7726A9;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .text_n{
+        display: block;
+        width: 180px;
+        background-color: #DAB3F2;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .text_a{
+        display: block;
+        width: 180px;
+        background-color: #79c06e;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .contents{
+        margin: 0 auto;
+        width: 90%;
+        border-bottom: solid 1px #000;
+        margin-bottom: 30px;
+    }
+    .contents p:nth-of-type(1){
+        color: #606060;
+        font-weight: 200;
+        font-size: 15.5px;
+    }
+    .contents p:nth-of-type(3){
+        border-top: solid 1px #cfcfcf;
+        border-bottom: solid 1px #cfcfcf;
+        margin: 10px 0;
+        padding: 10px 0;
+        font-size: 13.5px;
+        text-align: center;
+    }
+
+    .contents p:nth-of-type(4){
+        font-size: 13px;
+        display: block;
+        width:80%;
+        margin: 0 auto;
+        font-weight: 200;
+    }
+    .contents p:nth-of-type(4) img{
+        max-width: 70%;
+        margin: 15px auto;
+    }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .news{
+        padding: 50px 0;
+    }
+
+    .news > p{
+        text-align: center;
+        color: #8C6239;
+        font-size: 18px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    .news .menu{
+        width: 90%;
+        margin: 20px auto 100px auto;
+    }
+    .news .menu li{
+        float: left;
+        width: 20%;
+        line-height: 33px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .news .menu a{
+        display: block;
+    }
+    .news .menu li:nth-child(1) a{
+        background-color: #000;
+        color: #fff;
+    }
+    .news .menu li:nth-child(2) a{
+        background-color: #EE3E3E;
+        color: #fff;
+    }
+    .news .menu li:nth-child(3) a{
+        background-color: #7726A9;
+        color: #fff;
+    }
+    .news .menu li:nth-child(4) a{
+        background-color: #DAB3F2;
+        color: #fff;
+    }
+    .news .menu li:nth-child(5) a{
+        background-color: #79c06e;
+        color: #fff;
+    }
+
+    .text_y{
+        display: block;
+        width: 160px;
+        background-color: #EE3E3E;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .text_k{
+        display: block;
+        width: 160px;
+        background-color: #7726A9;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .text_n{
+        display: block;
+        width: 180px;
+        background-color: #DAB3F2;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .text_a{
+        display: block;
+        width: 180px;
+        background-color: #79c06e;
+        color: #fff;
+        line-height: 23px;
+        font-size: 12px;
+        font-weight: 200;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .contents{
+        margin: 0 auto;
+        width: 90%;
+        border-bottom: solid 1px #000;
+        margin-bottom: 30px;
+    }
+    .contents p:nth-of-type(1){
+        color: #606060;
+        font-weight: 200;
+        font-size: 15.5px;
+    }
+    .contents p:nth-of-type(3){
+        border-top: solid 1px #cfcfcf;
+        border-bottom: solid 1px #cfcfcf;
+        margin: 10px 0;
+        padding: 10px 0;
+        font-size: 13.5px;
+    }
+
+    .contents p:nth-of-type(4){
+        font-size: 13px;
+        font-weight: 200;
+    }
+    .contents p:nth-of-type(4) img{
+        max-width: 80%;
+        margin: 15px auto;
+    }
+}
+/*------------ここまでスマホ画面用の設定------------*/

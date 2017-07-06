@@ -1,0 +1,592 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    html, body{
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+
+    .nav_s{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 9999;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+        font-family: 'Architects Daughter', sans-serif;
+    }
+    header .button{
+        display: none;
+    }
+    header img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15px;
+        margin: 0 auto;
+    }
+    /*ドロップダウンメニューのCSS*/
+    .dropmenu{
+        *zoom: 1;
+        width: 960px;
+        margin: 75px auto 0 auto;
+        padding: 0;
+    }
+    .dropmenu:before, .dropmenu:after{
+        content: "";
+        display: table;
+    }
+    .dropmenu:after{
+        clear: both;
+    }
+    .dropmenu li{
+        position: relative;
+        width: 120px;
+        float: left;
+        margin: 0;
+        padding: 0;
+        /*font-family: 'Josefin Slab', serif;*/
+        line-height: 22px;
+        text-align: center;
+        font-size: 14.5px;
+        color: #8C6239;
+        border-right: solid 1px #999;
+    }
+    .dropmenu li:hover{
+        background: #999;
+        color: #fff;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .dropmenu > li:nth-of-type(1){
+        border-left: solid 1px #999;
+    }
+    .dropmenu li a{
+        display: block;
+        margin: 0;
+        color: #8C6239;
+        font-size: 14.5px;
+        line-height: 22px;
+        background-color:#fff;
+        /*font-family: 'Josefin Slab', serif;*/
+        -moz-transition:background-color  0.3s, color 0.3s;
+        -webkit-transition: background-color  0.3s, color 0.3s;
+        -o-transition: background-color  0.3s, color 0.3s;
+        -ms-transition: background-color  0.3s, color 0.3s;
+        transition: background-color  0.3s, color 0.3s;
+    }
+    .dropmenu li ul{
+        position: absolute;
+        z-index: 9999;
+        top: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .dropmenu li ul li{
+        width: 100%;
+        border: none;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    .dropmenu li ul li a{
+        background: #000;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .dropmenu li:hover > a{
+        background: #999;
+    }
+    .dropmenu li a:hover{
+        background: #999;
+        color: #fff;
+    }
+    /*ドロップダウンメニューの動き*/
+    .dropmenu li ul li{
+        overflow: hidden;
+        height: 0;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        -ms-transition: 0.2s;
+        transition: 0.2s;
+    }
+    .dropmenu li:hover ul li{
+        overflow: visible;
+        height: 22px;
+    }
+
+
+    /*フッター*/
+    footer{
+        width: 100%;
+        background-color: #dfdfdf;
+        font-weight: 200;
+    }
+    footer .site_map{
+        width: 960px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    footer .site_map ul{
+        clear: both;
+    }
+    footer .site_map li{
+        float: left;
+        font-size: 12px;
+        width: 90px;
+        text-align: center;
+        line-height: 2em;
+    }
+    footer .site_map li a{
+        color: #000;
+        font-weight: 400;
+    }
+    footer .site_map li:hover a{
+        text-decoration: underline;
+    }
+    footer .site_map ul:nth-of-type(1){
+        width: 900px;
+        margin: 0 auto;
+    }
+    footer .site_map ul:nth-of-type(2){
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    footer .text_sm{
+        padding-top: 50px;
+        text-align: center;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+
+    footer .text_si, footer .text_si:after{
+        content: "▶︎";
+        opacity: 0.5;
+    }
+
+    footer .button{
+        display: none;
+    }
+
+
+/*スクロールしたら出るボタン*/
+    #page-top{
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+    }
+    #page-top a{
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 19px;
+        /*vertical-align: middle;*/
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 1;
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    #page-top:hover a{
+        opacity: 0.8;
+    }
+
+    .bgs{
+        display: none;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+
+    .nav_p{
+        display: none;
+    }
+
+    header{
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 99999;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+        font-family: 'Architects Daughter', cursive;
+    }
+    header p{
+        width: 55px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header p img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    header > img{
+        position: absolute;
+        height: 28px;
+        left: 0;
+        right: 0;
+        top: 12px;
+        margin: 0 auto;
+    }
+    .dropmenu{
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top: 50px;
+    }
+    .dropmenu > li{
+        width:50%;
+        float: left;
+        padding-left: 10px;
+        font-size: 15px;
+        color: #8C6239;
+        border-bottom: solid 1px #999;
+        line-height: 40px;
+        background-color: #fff;
+    }
+    /*.dropmenu > li:nth-of-type(2){
+        border-left: solid 1px #999;
+    }
+    .dropmenu > li:nth-of-type(n+4){
+        border-left: solid 1px #999;
+    }*/
+    .dropmenu li ul li{
+        line-height: 41px;
+        padding-left: 1em;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+        border: none;
+    }
+    .dropmenu li a{
+        color: #8C6239;
+        display: block;
+    }
+    .dropmenu .mark:before{
+        content: "▶︎";
+    }
+    .dropmenu li ul{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+        background-color: #dfdfdf;
+        padding: 20px 0 25px 0;
+    }
+
+    footer .button{
+        display: block;
+        width: 25%;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 35px;
+        background-color: #999;
+    }
+
+    footer .text_sm{
+        display: none;
+    }
+
+    footer .site_map{
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    footer li{
+        width: 20%;
+        float: left;
+        color: #000;
+        text-align: center;
+        font-size: 13.5px;
+        line-height: 30px;
+    }
+
+    footer .text_si, footer .text_si:after{
+        content: "▶︎";
+        opacity: 0.3;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 11px;
+        margin-top: 20px;
+        font-weight: 200;
+    }
+
+    footer #page-top{
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding-top: 10px;
+        font-size: 20px;
+        margin-top: 15px;
+        background-color: #999;
+    }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+
+    .nav_p{
+        display: none;
+    }
+
+    header{
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 99999;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+        font-family: 'Architects Daughter', cursive;
+    }
+    header p{
+        width: 55px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header p img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    header > img{
+        position: absolute;
+        height: 28px;
+        left: 0;
+        right: 0;
+        top: 12px;
+        margin: 0 auto;
+    }
+    .dropmenu{
+        display: none;
+        /*background-color: #fff;*/
+        position: absolute;
+        width: 100%;
+        top: 50px;
+    }
+    .dropmenu li{
+        padding-left: 10px;
+        font-size: 15px;
+        color: #8C6239;
+        border-bottom: solid 1px #999;
+        line-height: 40px;
+        background-color: #fff;
+    }
+    .dropmenu li a{
+        color: #8C6239;
+        display: block;
+    }
+    .dropmenu .mark:before{
+        content: "▶︎";
+    }
+    .dropmenu li ul{
+        display: none;
+    }
+    .dropmenu li ul li{
+        border: none;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+
+    footer{
+        width: 100%;
+        background-color: #dfdfdf;
+        padding: 20px 0 25px 0;
+    }
+
+    footer .button{
+        display: block;
+        width: 40%;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 6px;
+        margin: 0 auto;
+        font-size: 13px;
+        line-height: 35px;
+        background-color: #999;
+    }
+
+    footer .text_sm{
+        display: none;
+    }
+
+    footer .site_map{
+        margin: 20px 0;
+        display: none;
+    }
+    footer li{
+        color: #000;
+        text-align: center;
+        font-size: 13.5px;
+        line-height: 30px;
+    }
+
+    footer .text_si, footer .text_si:before, footer .text_si:after{
+        content: "▼";
+        opacity: 0.3;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 11px;
+        font-weight: 200;
+        margin-top: 20px;
+    }
+
+    footer #page-top{
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding-top: 10px;
+        font-size: 20px;
+        margin-top: 15px;
+        background-color: #999;
+    }
+}
+/*------------ここまでスマホ画面用の設定------------*/
+
+
+
+/*------------固定背景の設定------------*/
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    .fixed_bg{
+        min-height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .bg3{
+        background-image: url("../images/headspa_bg.jpg");
+    }
+    .bg4{
+        background-image: url("../images/school_bg.jpg");
+    }
+    .bg5{
+        background-image: url("../images/bridal_bg.jpg");
+    }
+    .bg6{
+        background-image: url("../images/recruit_bg.jpg");
+    }
+    .bg7{
+        background-image: url("../images/concept_bg.jpg");
+    }
+
+    .fixed_bgs{
+        display: none;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 768px) {
+    .fixed_bgs{
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom : 0;
+        z-index: -1;
+    }
+
+    .bgs3{
+        background-image: url("../images/headspa_bg_s.jpg");
+    }
+    .bgs4{
+        background-image: url("../images/school_bg_s.jpg");
+    }
+    .bgs5{
+        background-image: url("../images/bridal_bg_s.jpg");
+    }
+    .bgs6{
+        background-image: url("../images/recruit_bg_s.jpg");
+    }
+    .bgs7{
+        background-image: url("../images/concept_bg_s.jpg");
+    }
+}
+
+/*------------ここまでスマホ画面用の設定------------*/

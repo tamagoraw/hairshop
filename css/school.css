@@ -1,0 +1,337 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .dropmenu > li:nth-of-type(7){
+        border-bottom: solid 1px #999;
+    }
+
+    .school{
+        padding-top: 250px;
+    }
+
+    .school ul{
+        width: 810px;
+        margin: 0 auto 15px auto;
+    }
+    .school ul li:nth-of-type(1){
+        float: left;
+        margin-right: 10px;
+    }
+    .school ul li{
+        float: left;
+    }
+    .school img{
+        width: 400px;
+    }
+
+    .school .text1{
+        width: 720px;
+        height: 120px;
+        margin: 0 auto;
+        padding: 13px;
+        margin-bottom: 250px;
+        font-size: 14.5px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+        font-weight: 200;
+    }
+    .school .text1:first-line{
+        font-size: 20px;
+        line-height: 2em;
+        font-weight: 400;
+    }
+    /*テキストを幅960px中央にするためのクラス*/
+    .text_center{
+        display: block;
+        width: 960px;
+        height: 80px;
+        margin: 0 auto;
+        padding: 15px 0 0 50px;
+        font-size: 14px;
+        font-weight: bold;
+        font-weight: 200;
+    }
+    .text_center:first-line{
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .school .text2{
+        width: 100%;
+        background-color: rgba(243, 249, 125, 0.9);
+        margin-bottom: 15px;
+    }
+    .school .text3{
+        width: 100%;
+        background-color: rgba(244, 194, 95, 0.9);
+        margin-bottom: 15px;
+    }
+    .school .text4{
+        width: 100%;
+        background-color: rgba(234, 161, 82, 0.9);
+        margin-bottom: 15px;
+    }
+    .school .text5{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 250px;
+    }
+    .school .text5_center{
+        display: block;
+        width: 960px;
+        height: 60px;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 10px 0 0 70px;
+        font-weight: 400;
+    }
+    .school .text6{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 40px 0;
+        margin-bottom: 200px;
+    }
+    .school .text6 a{
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .school .text6 a:hover{
+        text-decoration: underline;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからタブレット画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px) {
+    html, body{
+        font-size: 100%;
+        /*overflow: hidden;*/
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .school{
+        padding: 100px 0 50px 0;
+    }
+
+    .school ul{
+        width: 80%;
+        margin: 15px auto;
+    }
+    .school ul li{
+        width: 50%;
+        float: left;
+    }
+    .school img{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .school .text1{
+        margin: 0 auto 100px auto;
+        padding: 20px 1em;
+        width: 80%;
+        font-size: 15.5px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+        font-weight: 200;
+    }
+    .school .text1:first-line{
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    .school .text2{
+        width: 100%;
+        background-color: rgba(243, 249, 125, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .school .text2:first-line{
+        text-decoration: underline;
+        font-weight: 400;
+    }
+    .school .text3{
+        width: 100%;
+        background-color: rgba(244, 194, 95, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .school .text3:first-line{
+        text-decoration: underline;
+        font-weight: 400;
+    }
+    .school .text4{
+        width: 100%;
+        background-color: rgba(234, 161, 82, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .school .text4:first-line{
+        text-decoration: underline;
+        font-weight: 400;
+    }
+
+    .school .text5{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 100px;
+    }
+    .school .text6{
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .school .text6 a{
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+/*------------ここまでタブレット画面用の設定------------*/
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        /*overflow: hidden;*/
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .school{
+        padding: 100px 0 50px 0;
+    }
+
+    .school ul li:nth-of-type(2){
+        display: none;
+    }
+    .school img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .school .text1{
+        margin: 0 auto 100px 0;
+        padding: 20px 1em;
+        width: 100%;
+        font-size: 15.5px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+        font-weight: 200;
+    }
+    .school .text1:first-line{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .school .text2{
+        width: 100%;
+        background-color: rgba(243, 249, 125, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .school .text2:first-line{
+        text-decoration: underline;
+        font-weight: 400;
+    }
+    .school .text3{
+        width: 100%;
+        background-color: rgba(244, 194, 95, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .school .text3:first-line{
+        text-decoration: underline;
+        font-weight: 400;
+    }
+    .school .text4{
+        width: 100%;
+        background-color: rgba(234, 161, 82, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .school .text4:first-line{
+        text-decoration: underline;
+        font-weight: 400;
+    }
+
+    .school .text5{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 100px;
+    }
+    .school .text6{
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .school .text6 a{
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+/*------------ここまでスマホ画面用の設定------------*/

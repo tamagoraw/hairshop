@@ -1,0 +1,218 @@
+﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Light.eot');
+    src: url('../font/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.eot');
+    src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../font/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+
+/*------------ここからパソコン画面用の設定------------*/
+@media only screen and (min-width: 769px) {
+    body{
+        min-width:960px;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 100px;
+    }
+
+    .dropmenu > li:nth-of-type(5){
+        border-bottom: solid 1px #999;
+    }
+
+    .head_spa{
+        width: 960px;
+        height: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+        position: relative;
+    }
+    .head_spa .text1{
+        font-size:24px;
+        color: #fff;
+        text-shadow: 1px 1px 4px #000;
+        text-align: center;
+        font-weight: 400;
+    }
+    .head_spa .circle_text{
+        width: 200px;
+        height: 200px;
+        font-weight: 200;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 40px;
+        color: #fff;
+        font-size: 14px;
+        background-color: rgba(126, 99, 166, 0.8);;
+    }
+    .head_spa .circle_text:first-line{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .head_spa .text2{
+        position: absolute;
+        top: 160px;
+        left: 0;
+
+    }
+    .head_spa .text3{
+        position: absolute;
+        top: 160px;
+        left: 253px;
+    }
+    .head_spa .text4{
+        position: absolute;
+        top: 160px;
+        left: 506px;
+    }
+    .head_spa .text5{
+        position: absolute;
+        top: 160px;
+        left: 759px;
+    }
+    .head_spa .text6{
+        width: 700px;
+        height: 700px;
+        border-radius: 50%;
+        background-color: rgba(126, 99, 166, 0.8);;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 2.8em;
+        padding-top: 100px;
+        position: absolute;
+        top: 420px;
+        left: 130px;
+    }
+    .head_spa .text_b{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+/*------------ここまでパソコン画面用の設定------------*/
+
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (min-width: 442px) and (max-width: 768px){
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .head_spa .text1{
+        font-size: 18px;
+        padding: 50px 1em;
+        color: #fff;
+        text-shadow: 1px 1px 4px #000;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .head_spa .text_block{
+        width: 50%;
+        float: left;
+    }
+    .head_spa .circle_text{
+        display: block;
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        font-size: 16px;
+        text-align: center;
+        margin: 30px auto;
+        padding-top: 30px;
+        background-color: rgba(126, 99, 166, 0.8);
+        color: #fff;
+        font-weight: 200;
+      }
+      .head_spa .circle_text:first-line{
+          font-weight: 400;
+      }
+      .head_spa .text6{
+          width: 100%;
+          margin: 60px 0;
+          text-align: center;
+          padding: 25px 1em;
+          background-color: rgba(126, 99, 166, 0.8);
+          color: #fff;
+          font-weight: 200;
+          font-size: 16px;
+      }
+      .head_spa .text_b{
+          font-size: 20px;
+          font-weight: 400;
+      }
+}
+
+
+/*------------ここからスマホ画面用の設定------------*/
+@media only screen and (max-width: 441px) {
+    html, body{
+        font-size: 100%;
+        font-family: 'Noto Sans Japanese', "メイリオ", "ヒラギノ角ゴシック Pro", sans-serif;
+    }
+    #wrapper{
+        position: relative;
+        top: 50px;
+    }
+
+    .head_spa .text1{
+        font-size: 18px;
+        padding: 50px 1em;
+        color: #fff;
+        text-shadow: 1px 1px 4px #000;
+        text-align: center;
+        font-weight: 400;
+    }
+    .head_spa .circle_text{
+        display: block;
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        font-size: 16px;
+        text-align: center;
+        margin: 30px auto;
+        padding-top: 30px;
+        background-color: rgba(126, 99, 166, 0.8);
+        color: #fff;
+        font-weight: 200;
+      }
+      .head_spa .circle_text:first-line{
+          font-weight: 400;
+      }
+      .head_spa .text6{
+          width: 100%;
+          margin: 60px 0;
+          padding: 25px 1em;
+          background-color: rgba(126, 99, 166, 0.8);
+          color: #fff;
+          font-size: 16px;
+          font-weight: 200;
+      }
+      .head_spa .text_b{
+          font-size: 20px;
+          font-weight: 400;
+      }
+}
+/*------------ここまでスマホ画面用の設定------------*/
